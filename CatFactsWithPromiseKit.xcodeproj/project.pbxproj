@@ -12,6 +12,7 @@
 		086F086622256C38003199D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 086F086422256C38003199D8 /* Main.storyboard */; };
 		086F086822256C3A003199D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 086F086722256C3A003199D8 /* Assets.xcassets */; };
 		086F086B22256C3A003199D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 086F086922256C3A003199D8 /* LaunchScreen.storyboard */; };
+		7BFB9AD39D7761904588D0EA /* Pods_CatFactsWithPromiseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB6ED77F45A90648251D443F /* Pods_CatFactsWithPromiseKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,9 @@
 		086F086722256C3A003199D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		086F086A22256C3A003199D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		086F086C22256C3A003199D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54EFE013DC5F6F2DF68CCF03 /* Pods-CatFactsWithPromiseKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatFactsWithPromiseKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-CatFactsWithPromiseKit/Pods-CatFactsWithPromiseKit.release.xcconfig"; sourceTree = "<group>"; };
+		6F896F052FCB064DB2643278 /* Pods-CatFactsWithPromiseKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatFactsWithPromiseKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CatFactsWithPromiseKit/Pods-CatFactsWithPromiseKit.debug.xcconfig"; sourceTree = "<group>"; };
+		EB6ED77F45A90648251D443F /* Pods_CatFactsWithPromiseKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CatFactsWithPromiseKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BFB9AD39D7761904588D0EA /* Pods_CatFactsWithPromiseKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				086F085F22256C38003199D8 /* CatFactsWithPromiseKit */,
 				086F085E22256C38003199D8 /* Products */,
+				D69F77A95F5697F92563E173 /* Pods */,
+				DB84D7C18AC114A8173F88D8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = CatFactsWithPromiseKit;
 			sourceTree = "<group>";
 		};
+		D69F77A95F5697F92563E173 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6F896F052FCB064DB2643278 /* Pods-CatFactsWithPromiseKit.debug.xcconfig */,
+				54EFE013DC5F6F2DF68CCF03 /* Pods-CatFactsWithPromiseKit.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DB84D7C18AC114A8173F88D8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EB6ED77F45A90648251D443F /* Pods_CatFactsWithPromiseKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 086F086F22256C3A003199D8 /* Build configuration list for PBXNativeTarget "CatFactsWithPromiseKit" */;
 			buildPhases = (
+				61872B9FF0BC1E0D5762DD2B /* [CP] Check Pods Manifest.lock */,
 				086F085922256C38003199D8 /* Sources */,
 				086F085A22256C38003199D8 /* Frameworks */,
 				086F085B22256C38003199D8 /* Resources */,
+				FE39E900A39F48F13C6B4E4B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -92,7 +118,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 1010;
-				ORGANIZATIONNAME = "Lukas Zielinski (extern)";
+				ORGANIZATIONNAME = "lukas2";
 				TargetAttributes = {
 					086F085C22256C38003199D8 = {
 						CreatedOnToolsVersion = 10.1;
@@ -129,6 +155,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		61872B9FF0BC1E0D5762DD2B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CatFactsWithPromiseKit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE39E900A39F48F13C6B4E4B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CatFactsWithPromiseKit/Pods-CatFactsWithPromiseKit-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CatFactsWithPromiseKit/Pods-CatFactsWithPromiseKit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		086F085922256C38003199D8 /* Sources */ = {
@@ -280,6 +353,7 @@
 		};
 		086F087022256C3A003199D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F896F052FCB064DB2643278 /* Pods-CatFactsWithPromiseKit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -297,6 +371,7 @@
 		};
 		086F087122256C3A003199D8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54EFE013DC5F6F2DF68CCF03 /* Pods-CatFactsWithPromiseKit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

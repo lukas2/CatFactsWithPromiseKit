@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  CatFactsWithPromiseKit
 //
-//  Created by Lukas Zielinski (extern) on 26.02.19.
-//  Copyright © 2019 Lukas Zielinski (extern). All rights reserved.
+//  Created by lukas2 on 26.02.19.
+//  Copyright © 2019 lukas2. All rights reserved.
 //
 
 import UIKit
