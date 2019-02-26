@@ -24,7 +24,7 @@ class ViewController: UIViewController {
     
     @IBAction func onTap() {
         firstly { self.printInfo() }
-            .then { self.fetchRandomCatfactFromServer() }
+            .then { self.fetch() }
             .then { self.parse($0) }
             .then { self.display($0.text) }
             .catch { self.display("*** ERROR: \(($0 as! CatError).message)") }
@@ -37,7 +37,7 @@ class ViewController: UIViewController {
         }
     }
     
-    private func fetchRandomCatfactFromServer() -> Promise<Data> {
+    private func fetch() -> Promise<Data> {
         return Promise<Data> { seal in
             backgroundQueue.async {
                 //sleep(arc4random() % 5)
